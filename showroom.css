@@ -1,0 +1,333 @@
+/*Reste*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+/*styling headings*/
+h1{
+    text-align: center;
+    font-weight:700;
+    justify-content: center;
+    color: rgb(227,65,64);
+
+}
+
+
+
+h2{
+    margin-left: 10px;
+
+}
+/*Styling Paragraphs*/
+p {
+    color:#000;
+    padding: 12px;
+
+}
+
+
+.expo {
+    color:white;
+    font-weight: 700;
+    background-color: blue;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.expo:hover{
+    color:white;
+    background-color: rgb(170, 45, 45);
+    
+}
+
+/*Hovering paragraphs*/
+h2:hover{
+    color: #CCC;
+}
+
+/* Container */
+.container {
+    display:flex;
+}
+
+/* Styling the company logo*/
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    margin-left: 30%;
+    
+}
+
+.show{
+    margin-left:0.5px;
+
+}
+.show:hover{
+    color:coral;
+}
+
+/*Styling the Span elements*/
+
+.Showroom{
+    color: red;
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+
+.Showroom:hover{
+    color: #444;
+    margin-left: 10px;
+}
+.room{
+    color:blue;
+    font-size:1rem;
+    font-weight:600;
+}
+
+.room:hover,focus{
+   color: red;
+   text-decoration: underline; 
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 22px;
+    height: 100vh;
+    position: fixed;
+
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Content Styles */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.wel{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000;
+    justify-content: flex-end;
+}
+.wel:last-child{
+    margin-bottom: 0;
+}
+
+
+/* Vehicle Showrom Display*/
+
+.vehicles_ours {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding:10px;
+
+}
+
+
+/* Vehicle List Styles */
+
+.vehicle-list {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.vehicle-card {
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width:calc(50% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 5px;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: auto;
+}
+
+.vehicle-info {
+    padding: 20px;
+}
+
+.vehicle-info h3 {
+    margin-top:0;
+}
+
+.vehicle-info p {
+    margin-bottom: 0;
+}
+
+/*Styling the contact heading*/
+.cont{
+    padding: 14px;
+    margin-top: 2px;
+}
+
+
+label{
+    margin-left:10px;
+    padding: 12px 12px 12px 10px;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email]{
+    width:80%;
+    display:block;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+    padding-left: 15px;
+    margin:15px;
+    resize: vertical;
+}
+
+
+
+textarea {
+    width:40%;
+    height:auto;
+    padding: 12px 12px;
+    border:2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    margin-left: 15px;
+}
+
+
+
+button {
+    background-color: rgb(17, 135, 165);
+    padding: 10px 10px;
+    border-radius:3px;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    margin-bottom:7px;
+}
+
+
+
+.submit {
+    background-color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-left: 10px; 
+    
+}
+
+button:hover{
+    background-color: red;
+}
+
+
+.quick{
+    color:#fff;
+    font-size:1rem;
+    text-align: center;
+    justify-content: center;
+    background-color:#dd2f2f;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 100%;
+    height:auto;
+    margin: 1px 10px 1px 0px;
+}
+
+.quick p{
+    color: #fff;
+    font-weight:600;
+
+}
+
+/*Media Sizes*/
+@media screen and (max-width:500px) {
+    .wel{
+        padding:20px 10px;
+        background-color:red;
+
+    } 
+
+body{
+background-color:blue;
+}
+
+    .container{
+        background-color: red;
+    }
+}
